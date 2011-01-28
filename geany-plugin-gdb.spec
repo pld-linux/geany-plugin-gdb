@@ -45,9 +45,6 @@ geany-plugin-gdb static library.
 %description static -l pl.UTF-8
 Biblioteka statyczna geany-plugin-gdb.
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %prep
 %setup -q -n geanygdb-%{version}
 
@@ -72,6 +69,9 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang geanygdb
+
+%clean
+rm -rf $RPM_BUILD_ROOT
 
 %files -f geanygdb.lang
 %defattr(644,root,root,755)

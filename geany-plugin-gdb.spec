@@ -15,7 +15,7 @@ URL:		http://plugins.geany.org/geanygdb/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	geany-devel >= 0.16
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel >= 2:2.8
 BuildRequires:	intltool
 BuildRequires:	libtool
